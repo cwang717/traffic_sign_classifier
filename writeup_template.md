@@ -48,7 +48,7 @@ signs data set:
 * The size of training set is 34799
 * The size of the validation set is 4410
 * The size of test set is 12630
-* The shape of a traffic sign image is 32x32
+* The shape of a traffic sign image is 32x32x3
 * The number of unique classes/labels in the data set is 43.
 
 #### 2. Include an exploratory visualization of the dataset.
@@ -93,14 +93,14 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an Adam optimizer, set the batch size as 128, trained the model for 40 epochs at the learning rate 0.001.
+To train the model, I used an Adam optimizer, set the batch size as 128, trained the model for 22 epochs at the learning rate 0.001. Initially I had trained it for 40 epoches, but it seems that after 20 epoches, the prediction accuracies on the validation set were above 93% on average and did not increase anymore. Therefore, I reduced the number of epoches trained. 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 99.8%
-* validation set accuracy of 93.7%
-* test set accuracy of 92.5%
+* training set accuracy of 99.4%
+* validation set accuracy of 93.3%
+* test set accuracy of 91.5%
 
 If a well known architecture was chosen:
 * What architecture was chosen?
